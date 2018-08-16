@@ -7,6 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "engines": {
+    "node": "^8.11.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexandre-dohrmann/Project-Two---Team-Bey.git"
@@ -27,7 +30,7 @@
     "express-session": "^1.15.6",
     "method-override": "^3.0.0",
     "mongoose": "^5.2.4",
-    "node": "^10.7.0",
+    "node": "^8.11.2",
     "node-pre-gyp": "^0.11.0",
     "npm-check-updates": "^2.14.2",
     "passport": "^0.4.0",
