@@ -1,0 +1,35 @@
+{
+  "name": "project-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandre-dohrmann/Project-Two---Team-Bey.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandre-dohrmann/Project-Two---Team-Bey/issues"
+  },
+  "homepage": "https://github.com/alexandre-dohrmann/Project-Two---Team-Bey#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "connect-mongodb-session": "^2.0.3",
+    "ejs": "^2.6.1",
+    "embed-js": "^5.0.3",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.2.4",
+    "node": "^10.7.0",
+    "node-pre-gyp": "^0.10.3",
+    "passport": "^0.4.0",
+    "x-frame-options": "^1.0.0"
+  }
+}

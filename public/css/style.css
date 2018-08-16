@@ -1,0 +1,292 @@
+/**********************************/
+/*HEADERS*/
+/**********************************/
+
+.button-hp {
+    text-align: left;
+    margin-left: 40px;
+    padding-top: 15px;
+}
+.btn {
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+}
+
+header {
+    margin-top: 10px;
+
+}
+
+h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 80px;
+    font-weight: 5px;
+    color: white;
+    letter-spacing: -8px;
+}
+.subtitle {
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 40px;
+	letter-spacing: 0;
+}
+
+.subtitle-home {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0;
+    margin-top: -30px;
+    margin-bottom: -30px;
+}
+.hp-title {
+    padding-top: 30px;
+}
+
+/**********************************/
+/*NAVS*/
+/**********************************/
+.navbar-expand-lg, .bg-light {
+    background-color: rgb(255, 255, 255, 0.8) !important;
+}
+.nav-item {
+    font-size: 20px !important;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/**********************************/
+/*REGISTRATION & LOGIN*/
+/**********************************/
+.regLog {
+    text-align: center;
+    display: inline-block;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.homeInput {
+    text-align: right;
+    font-size: 20px;
+    color: lightgreen;
+}
+
+.reg, .inputLogin {
+    display: inline-block;
+}
+
+.logs {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: lightgreen !important;
+}
+
+.inputs {
+    margin-top: 10px;
+    text-align: center;
+}
+.failure {
+    text-align: center;
+    color: lightgreen;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+h4 {
+    text-align: center;
+    color: white;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+/**********************************/
+/*BODY*/
+/**********************************/
+.welcome {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: red;
+
+}
+.welcome-body {
+    background-color: rgb(255, 0, 0, 0.30);
+    border-radius: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.container {
+    background-image: url('/images/login-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.container2 {
+    background-image: url('/images/background_home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.background-ex {
+    background-image: url('/images/background_ex.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.background-ex-home {
+    background-image: url('/images/background_ex_home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.background-prof{
+    background-image: url('/images/background_prof.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.background-work-home{
+    background-image: url('/images/background_work_home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.background-work-new{
+    background-image: url('/images/background_work_new.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.workouts {
+    text-align: left;
+}
+
+.details {
+	text-align: left;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: red;
+}
+.lowerDetails {
+	text-align: left;
+	font-size: 25px;
+	margin: 0;
+	display: inline-block;
+	text-transform: uppercase;
+}
+.lowerDetails2 {
+    text-align: left;
+    font-size: 25px;
+    margin: 0;
+    display: inline-block;
+    text-transform: uppercase;
+    color: lightgreen;
+}
+
+.inputs2 {
+	text-align: right;
+	display: inline-block;
+	margin-left: 20px;
+	color: red;
+}
+
+form {
+	font-family: 'Barlow Condensed', sans-serif;
+	text-align: left;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.delete, .edit, .add {
+	display: inline-block;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 30px;
+
+}
+.delete2 {
+    line-height: 1.5;
+}
+.client-workouts {
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 20px;
+	margin: 10px;
+	display: inline-block;
+}
+
+.workout-buttons {
+	font-size: 20px;
+	border-radius: 5px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h5 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 25px;
+    text-align: justify;
+    color: white;
+    margin: 10px 40px;
+    line-height: 1;
+}
+.ex-block {
+    display: inline-block;
+    margin: 15px 20px;
+}
+.exercise-choice, .indiv-exercise {
+    text-align: center;
+    list-style-type: none;
+}
+.exercise-choice {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.indiv-exercise {
+    font-family: 'Barlow Condensed', sans-serif;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.indiv-block {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 25px;
+}
+ul {
+    padding: 0;
+    margin-top: -10px;
+}
+.ex-example {
+    max-height: 300px;
+    max-width: 300px;
+}
+.ex-deets {
+    text-align: center;
+}
+
+/**********************************/
+/*FOOTER*/
+/**********************************/
+.copyright {
+    color: white !important;
+    text-align: center !important;
+    font-size: 16px !important;
+
+}
+.nav-item {
+    font-family: 'Barlow Condensed', sans-serif;
+    list-style-type: none;
+    font-size: 12px;
+}
+

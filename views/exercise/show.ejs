@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Montserrat+Alternates" rel="stylesheet">
+<title>Trainer. - Exercise Example Page</title>
+</head>
+<body class="container background-ex">
+  <header></br>
+    <h1 class="nav justify-content-center title">Trainer.</h1></br>
+    <h1 class="nav justify-content-center subtitle"><%=exercise.name%> Details Page</h1></br>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="/workout">Back-to-Workouts<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link active" href="/exercise">Back-to-Exercises</a>
+        </div>
+      </div>
+    </nav></br>
+  </header>
+  <main>
+  	<div class="ex-deets">
+  		<h4 class="details ex-deets"><%=exercise.name%> - Photo Example</h4>
+  		<img class="ex-example" src="<%=exercise.photo%>"><br/>
+  	</div></br>
+	<div class="ex-deets">
+		<h4 class="details ex-deets"><%=exercise.name%> - Video Example</h4></br>
+			<% if (exercise.name === "Squat") { %>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/jGQ8_IMPQOY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<% } %>
+			<% if (exercise.name === "Lunge") { %>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/QOVaHwm-Q6U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<% } %> 
+			<% if (exercise.name === "Push-Up") { %>	
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/BV8fdffQwLA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<% } %>
+			<% if (exercise.name === "Pull-Up") { %>	
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/nJrDnZp2LOo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<% } %>
+			<% if (exercise.name === "Jefferson Curl") { %>	
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/nYS0R4c3qCA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<% } %>
+			<% if (exercise.name === "German Arm Swing") { %>	
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/n1L7zIcgeXo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<% } %>
+			<% if (exercise.name === "Plank") { %>	
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/B296mZDhrP4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			<% } %>
+	<h5 class="details ex-deets">Exercise Description: </h5><h5><%=exercise.description%></h5>
+	</div></br>
+  </main></br></br></br>
+  <footer>
+    <ul>
+      <li class="nav-item">
+          <a class="nav-link active copyright">© 2018 Trainer.</a>
+        </li>
+    </ul></br>
+  </footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
