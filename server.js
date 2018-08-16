@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 const session = require('express-session');
-const assert = require('assert');
+const port = process.env.PORT || 7000;
 require('./db/db');
 
 
@@ -15,19 +15,10 @@ require('./db/db');
 const MongoDBStore = require('connect-mongodb-session')(session);
 
 
-store.on('error', function (error) {
-  assert.ifError(error);
-  assert.ok(false);
-});
-
 app.use(session({
   secret: 'This is a secret',
-  cookie: {
-    maxAge: 1000 * 60 * 60 * 24
-  },
-  store: new MongoDBStore({
-    url: process.env.MONGOLAB_URI //new code
-  }),
+  resave: false, //only save when the session object has been modified
+  saveUninitialized: false //user for login sessions, we only want to save when we modify the session
 }));
 
 
@@ -54,4 +45,6 @@ app.get('/', (req, res) => {
   res.render('index.ejs');
 });
 
-app.listen(process.env.PORT || 8000); 
+app.listen(port, () => {
+  console.log(`Server is listening on port: ${port}`);
+})

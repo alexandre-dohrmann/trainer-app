@@ -1,13 +1,11 @@
 const mongoose = require('mongoose');
 
-const Exercise = require("../models/exercise.js");
-const ExerciseData = require("../models/exerciseData.js");
-
-// create our db and connect
-// ****Greyed this out afterwards***
 
 
-const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/project2';
+
+const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost/trainer';
+
+
 mongoose.connect(mongoUri);
 
 
