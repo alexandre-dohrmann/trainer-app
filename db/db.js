@@ -5,10 +5,9 @@ const ExerciseData = require("../models/exerciseData.js");
 
 // create our db and connect
 // ****Greyed this out afterwards***
-// mongoose.connect('mongodb://localhost/project2');
 
 
-const mongoUri = process.env.DATABASE_URL || 'mongodb://localhost:27017/project_2_session_test';
+const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/project2';
 mongoose.connect(mongoUri);
 
 

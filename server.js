@@ -15,14 +15,6 @@ require('./db/db');
 // +++++++++++++++++++++++++++++++++++++++++++
 const MongoDBStore = require('connect-mongodb-session')(session);
 
-const store = new MongoDBStore({
-  uri: 'mongodb://localhost:27017/project_2_session_test',
-  collection: 'mySessions'
-});
-
-store.on('connected', function () {
-  store.client;
-});
 
 store.on('error', function (error) {
   assert.ifError(error);
@@ -37,8 +29,6 @@ app.use(session({
   store: new MongoDBStore({
     url: process.env.MONGOLAB_URI //new code
   }),
-  resave: true,
-  saveUninitialized: true
 }));
 
 
