@@ -13,9 +13,6 @@ require('./db/db');
 // BACKED SESSION STORAGE (CONNECT+EXPRESS:
 // +++++++++++++++++++++++++++++++++++++++++++
 // +++++++++++++++++++++++++++++++++++++++++++
-const mongoose = require('mongoose');
-const mongoUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/project_2_session_test';
-mongoose.connect(mongoUri);
 const MongoDBStore = require('connect-mongodb-session')(session);
 
 const store = new MongoDBStore({
